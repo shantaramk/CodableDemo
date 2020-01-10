@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CodableDemo/ViewController+UITableView.swift"
-            timestampString = "594715305.000021"
+            filePath = "CodableDemo/Cell/MovieCell.swift"
+            timestampString = "600358136.05542"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "yearDifferece(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
