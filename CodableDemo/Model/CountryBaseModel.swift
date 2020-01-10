@@ -12,7 +12,7 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
-struct CountryBase : Codable {
+struct CountryBaseModel : Codable {
 	let name : String?
 	let topLevelDomain : [String]?
 	let alpha2Code : String?
@@ -23,9 +23,9 @@ struct CountryBase : Codable {
 	let region : String?
 	let subregion : String?
 	let population : Int?
-	let latlng : [Int]?
+	let latlng : [Double]?
 	let demonym : String?
-	let area : Int?
+	let area : Double?
 	let gini : Double?
 	let timezones : [String]?
 	let borders : [String]?
@@ -74,9 +74,9 @@ struct CountryBase : Codable {
 		region = try values.decodeIfPresent(String.self, forKey: .region)
 		subregion = try values.decodeIfPresent(String.self, forKey: .subregion)
 		population = try values.decodeIfPresent(Int.self, forKey: .population)
-		latlng = try values.decodeIfPresent([Int].self, forKey: .latlng)
+		latlng = try values.decodeIfPresent([Double].self, forKey: .latlng)
 		demonym = try values.decodeIfPresent(String.self, forKey: .demonym)
-		area = try values.decodeIfPresent(Int.self, forKey: .area)
+		area = try values.decodeIfPresent(Double.self, forKey: .area)
 		gini = try values.decodeIfPresent(Double.self, forKey: .gini)
 		timezones = try values.decodeIfPresent([String].self, forKey: .timezones)
 		borders = try values.decodeIfPresent([String].self, forKey: .borders)
